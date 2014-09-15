@@ -1,0 +1,313 @@
+@import url();
+
+
+body {
+  font-family: 'FuturaBT-Book', sans-serif;
+  text-decoration: none;
+  color: black;
+  background-color: #fffaec;
+}
+
+strong {
+  font-family: 'FuturaBT-Bold', sans-serif;
+  font-weight: normal;
+}
+
+
+
+/* ------- RESPONSIVE - SWEETHEARTS BLOCK + TIMELINE SLIDER ------- */
+
+/* initial style for too narrow and too short */
+
+#layout {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+#content td {
+  font-family: 'FuturaBT-Bold', sans-serif;
+  visibility: hidden;
+  color: black;
+  height: 28px;
+  width: 28px;
+  text-align: center; 
+  vertical-align: middle;
+}
+
+#timeline {
+  height: 10px;
+}
+
+#timeline a {
+  border-left: 1px solid #ccc;
+  position: absolute;
+  height: 10px;
+  padding-left: 1px;
+}
+
+#timeline .activePage,
+#timeline a:hover {
+  border-left: 1px solid #000;
+  position: absolute;
+  height: 30px;
+  margin-top:-10px;
+}
+
+#timeline,
+#content {
+  width: 308px;
+  margin-left: -154px;
+}
+
+#next,
+#previous,
+#timeline {
+  bottom: 25px;
+}
+
+#next {
+  position: absolute;
+  margin-bottom: -6px;
+  left: 50%;
+  margin-left: -180px;
+}
+#previous {
+  position: absolute;
+  margin-bottom: -6px;
+  right: 50%;
+  margin-right: -180px;
+}
+
+@media (min-width: 930px) {
+  #next,
+  #previous,
+  #timeline {
+    top: 25px;
+  }
+  #next {
+    margin-top: -5px;
+  }
+  #previous {
+    margin-top: -5px;
+  }
+}
+
+
+/* content wide enough to center in window */
+@media (min-width: 308px) {
+  #timeline,
+  #content {
+    position: absolute;
+    left: 50%;
+    margin-left: -154px;
+  }
+}
+
+/* content tall enough to center in window */
+@media (min-height: 388px) {
+  #layout {
+    position: absolute;
+    top: 50%;
+    height: 194px;
+    margin-top: -194px;
+  }
+}
+
+/* desktop size, larger square */
+@media (min-width: 506px) and (min-height: 586px) {
+  #timeline,
+  #content {
+    width: 506px;
+    margin-left: -253px;
+  }
+  #layout {
+    /* overall height includes margin-top */
+    height: 293px;
+    margin-top: -293px;
+  }
+  #content td {
+    height: 46px;
+    width: 46px;
+  }
+  #next{
+    margin-left: -280px;
+  }
+  #previous{
+    margin-right: -280px;
+  }
+}
+
+
+/* ------- NAV ------- */
+
+#about {
+  top: 20px;
+  right: 20px;
+  position: absolute;
+  font-family: 'FuturaBT-Bold', sans-serif;
+}
+
+#colophon {
+  top: 20px;
+  left: 20px;
+  position: absolute;
+  font-family: 'FuturaBT-Bold', sans-serif;
+}
+
+p {
+  line-height: 140%;
+}
+
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+a:hover, a.current {
+  color: black;
+}
+
+
+/*
+for n in range(0, 139): print "#timeline a:nth-child(%s){left: %s%%;}" % (n+1, (1 - (n/139.0))*100)
+*/
+#timeline a:nth-child(1){left: 100.0%;}
+#timeline a:nth-child(2){left: 99.2805755396%;}
+#timeline a:nth-child(3){left: 98.5611510791%;}
+#timeline a:nth-child(4){left: 97.8417266187%;}
+#timeline a:nth-child(5){left: 97.1223021583%;}
+#timeline a:nth-child(6){left: 96.4028776978%;}
+#timeline a:nth-child(7){left: 95.6834532374%;}
+#timeline a:nth-child(8){left: 94.964028777%;}
+#timeline a:nth-child(9){left: 94.2446043165%;}
+#timeline a:nth-child(10){left: 93.5251798561%;}
+#timeline a:nth-child(11){left: 92.8057553957%;}
+#timeline a:nth-child(12){left: 92.0863309353%;}
+#timeline a:nth-child(13){left: 91.3669064748%;}
+#timeline a:nth-child(14){left: 90.6474820144%;}
+#timeline a:nth-child(15){left: 89.928057554%;}
+#timeline a:nth-child(16){left: 89.2086330935%;}
+#timeline a:nth-child(17){left: 88.4892086331%;}
+#timeline a:nth-child(18){left: 87.7697841727%;}
+#timeline a:nth-child(19){left: 87.0503597122%;}
+#timeline a:nth-child(20){left: 86.3309352518%;}
+#timeline a:nth-child(21){left: 85.6115107914%;}
+#timeline a:nth-child(22){left: 84.8920863309%;}
+#timeline a:nth-child(23){left: 84.1726618705%;}
+#timeline a:nth-child(24){left: 83.4532374101%;}
+#timeline a:nth-child(25){left: 82.7338129496%;}
+#timeline a:nth-child(26){left: 82.0143884892%;}
+#timeline a:nth-child(27){left: 81.2949640288%;}
+#timeline a:nth-child(28){left: 80.5755395683%;}
+#timeline a:nth-child(29){left: 79.8561151079%;}
+#timeline a:nth-child(30){left: 79.1366906475%;}
+#timeline a:nth-child(31){left: 78.4172661871%;}
+#timeline a:nth-child(32){left: 77.6978417266%;}
+#timeline a:nth-child(33){left: 76.9784172662%;}
+#timeline a:nth-child(34){left: 76.2589928058%;}
+#timeline a:nth-child(35){left: 75.5395683453%;}
+#timeline a:nth-child(36){left: 74.8201438849%;}
+#timeline a:nth-child(37){left: 74.1007194245%;}
+#timeline a:nth-child(38){left: 73.381294964%;}
+#timeline a:nth-child(39){left: 72.6618705036%;}
+#timeline a:nth-child(40){left: 71.9424460432%;}
+#timeline a:nth-child(41){left: 71.2230215827%;}
+#timeline a:nth-child(42){left: 70.5035971223%;}
+#timeline a:nth-child(43){left: 69.7841726619%;}
+#timeline a:nth-child(44){left: 69.0647482014%;}
+#timeline a:nth-child(45){left: 68.345323741%;}
+#timeline a:nth-child(46){left: 67.6258992806%;}
+#timeline a:nth-child(47){left: 66.9064748201%;}
+#timeline a:nth-child(48){left: 66.1870503597%;}
+#timeline a:nth-child(49){left: 65.4676258993%;}
+#timeline a:nth-child(50){left: 64.7482014388%;}
+#timeline a:nth-child(51){left: 64.0287769784%;}
+#timeline a:nth-child(52){left: 63.309352518%;}
+#timeline a:nth-child(53){left: 62.5899280576%;}
+#timeline a:nth-child(54){left: 61.8705035971%;}
+#timeline a:nth-child(55){left: 61.1510791367%;}
+#timeline a:nth-child(56){left: 60.4316546763%;}
+#timeline a:nth-child(57){left: 59.7122302158%;}
+#timeline a:nth-child(58){left: 58.9928057554%;}
+#timeline a:nth-child(59){left: 58.273381295%;}
+#timeline a:nth-child(60){left: 57.5539568345%;}
+#timeline a:nth-child(61){left: 56.8345323741%;}
+#timeline a:nth-child(62){left: 56.1151079137%;}
+#timeline a:nth-child(63){left: 55.3956834532%;}
+#timeline a:nth-child(64){left: 54.6762589928%;}
+#timeline a:nth-child(65){left: 53.9568345324%;}
+#timeline a:nth-child(66){left: 53.2374100719%;}
+#timeline a:nth-child(67){left: 52.5179856115%;}
+#timeline a:nth-child(68){left: 51.7985611511%;}
+#timeline a:nth-child(69){left: 51.0791366906%;}
+#timeline a:nth-child(70){left: 50.3597122302%;}
+#timeline a:nth-child(71){left: 49.6402877698%;}
+#timeline a:nth-child(72){left: 48.9208633094%;}
+#timeline a:nth-child(73){left: 48.2014388489%;}
+#timeline a:nth-child(74){left: 47.4820143885%;}
+#timeline a:nth-child(75){left: 46.7625899281%;}
+#timeline a:nth-child(76){left: 46.0431654676%;}
+#timeline a:nth-child(77){left: 45.3237410072%;}
+#timeline a:nth-child(78){left: 44.6043165468%;}
+#timeline a:nth-child(79){left: 43.8848920863%;}
+#timeline a:nth-child(80){left: 43.1654676259%;}
+#timeline a:nth-child(81){left: 42.4460431655%;}
+#timeline a:nth-child(82){left: 41.726618705%;}
+#timeline a:nth-child(83){left: 41.0071942446%;}
+#timeline a:nth-child(84){left: 40.2877697842%;}
+#timeline a:nth-child(85){left: 39.5683453237%;}
+#timeline a:nth-child(86){left: 38.8489208633%;}
+#timeline a:nth-child(87){left: 38.1294964029%;}
+#timeline a:nth-child(88){left: 37.4100719424%;}
+#timeline a:nth-child(89){left: 36.690647482%;}
+#timeline a:nth-child(90){left: 35.9712230216%;}
+#timeline a:nth-child(91){left: 35.2517985612%;}
+#timeline a:nth-child(92){left: 34.5323741007%;}
+#timeline a:nth-child(93){left: 33.8129496403%;}
+#timeline a:nth-child(94){left: 33.0935251799%;}
+#timeline a:nth-child(95){left: 32.3741007194%;}
+#timeline a:nth-child(96){left: 31.654676259%;}
+#timeline a:nth-child(97){left: 30.9352517986%;}
+#timeline a:nth-child(98){left: 30.2158273381%;}
+#timeline a:nth-child(99){left: 29.4964028777%;}
+#timeline a:nth-child(100){left: 28.7769784173%;}
+#timeline a:nth-child(101){left: 28.0575539568%;}
+#timeline a:nth-child(102){left: 27.3381294964%;}
+#timeline a:nth-child(103){left: 26.618705036%;}
+#timeline a:nth-child(104){left: 25.8992805755%;}
+#timeline a:nth-child(105){left: 25.1798561151%;}
+#timeline a:nth-child(106){left: 24.4604316547%;}
+#timeline a:nth-child(107){left: 23.7410071942%;}
+#timeline a:nth-child(108){left: 23.0215827338%;}
+#timeline a:nth-child(109){left: 22.3021582734%;}
+#timeline a:nth-child(110){left: 21.5827338129%;}
+#timeline a:nth-child(111){left: 20.8633093525%;}
+#timeline a:nth-child(112){left: 20.1438848921%;}
+#timeline a:nth-child(113){left: 19.4244604317%;}
+#timeline a:nth-child(114){left: 18.7050359712%;}
+#timeline a:nth-child(115){left: 17.9856115108%;}
+#timeline a:nth-child(116){left: 17.2661870504%;}
+#timeline a:nth-child(117){left: 16.5467625899%;}
+#timeline a:nth-child(118){left: 15.8273381295%;}
+#timeline a:nth-child(119){left: 15.1079136691%;}
+#timeline a:nth-child(120){left: 14.3884892086%;}
+#timeline a:nth-child(121){left: 13.6690647482%;}
+#timeline a:nth-child(122){left: 12.9496402878%;}
+#timeline a:nth-child(123){left: 12.2302158273%;}
+#timeline a:nth-child(124){left: 11.5107913669%;}
+#timeline a:nth-child(125){left: 10.7913669065%;}
+#timeline a:nth-child(126){left: 10.071942446%;}
+#timeline a:nth-child(127){left: 9.35251798561%;}
+#timeline a:nth-child(128){left: 8.63309352518%;}
+#timeline a:nth-child(129){left: 7.91366906475%;}
+#timeline a:nth-child(130){left: 7.19424460432%;}
+#timeline a:nth-child(131){left: 6.47482014388%;}
+#timeline a:nth-child(132){left: 5.75539568345%;}
+#timeline a:nth-child(133){left: 5.03597122302%;}
+#timeline a:nth-child(134){left: 4.31654676259%;}
+#timeline a:nth-child(135){left: 3.59712230216%;}
+#timeline a:nth-child(136){left: 2.87769784173%;}
+#timeline a:nth-child(137){left: 2.15827338129%;}
+#timeline a:nth-child(138){left: 1.43884892086%;}
+#timeline a:nth-child(139){left: 0.719424460432%;}
