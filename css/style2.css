@@ -29,8 +29,9 @@ strong {
   font-family: 'FuturaBT-Bold', sans-serif;
   visibility: hidden;
   color: black;
-  height: 28px;
-  width: 28px;
+  font-size: 13px;
+  height: 24px;
+  width: 24px;
   text-align: center; 
   vertical-align: middle;
 }
@@ -46,6 +47,10 @@ strong {
   padding-left: 1px;
 }
 
+#timeline a #animation {
+  border-left: 1px solid black;
+}
+
 #timeline .activePage,
 #timeline a:hover {
   border-left: 1px solid #000;
@@ -56,8 +61,8 @@ strong {
 
 #timeline,
 #content {
-  width: 308px;
-  margin-left: -154px;
+  width: 264px;
+  margin-left: -132px;
 }
 
 #next,
@@ -70,20 +75,20 @@ strong {
   position: absolute;
   margin-bottom: -6px;
   left: 50%;
-  margin-left: -180px;
+  margin-left: -155px;
 }
 #previous {
   position: absolute;
   margin-bottom: -6px;
   right: 50%;
-  margin-right: -180px;
+  margin-right: -155px;
 }
 
 @media (min-width: 930px) {
   #next,
   #previous,
   #timeline {
-    top: 25px;
+    top: 22px;
   }
   #next {
     margin-top: -5px;
@@ -95,27 +100,35 @@ strong {
 
 
 /* content wide enough to center in window */
-@media (min-width: 308px) {
+@media (min-width: 264px) {
   #timeline,
   #content {
     position: absolute;
     left: 50%;
-    margin-left: -154px;
+    margin-left: -132px;
+  }
+  #home {
+    right: 50%;
   }
 }
 
 /* content tall enough to center in window */
-@media (min-height: 388px) {
+@media (min-height: 370px) {
   #layout {
     position: absolute;
-    top: 50%;
-    height: 194px;
-    margin-top: -194px;
+    top: 53%;
+    height: 185px;
+    margin-top: -185px;
+  }
+  /* back home > centered "sweethearts" button */
+  #home {
+    right: 50%;
+    margin-right: -10px;
   }
 }
 
 /* desktop size, larger square */
-@media (min-width: 506px) and (min-height: 586px) {
+@media (min-width: 650px) and (min-height: 586px) {
   #timeline,
   #content {
     width: 506px;
@@ -123,10 +136,12 @@ strong {
   }
   #layout {
     /* overall height includes margin-top */
+    top: 50%;
     height: 293px;
     margin-top: -293px;
   }
   #content td {
+    font-size: 16px;
     height: 46px;
     width: 46px;
   }
@@ -136,24 +151,49 @@ strong {
   #previous{
     margin-right: -280px;
   }
+  /* back home > centered "sweethearts" button */
+  #home {
+    right: 50%;
+    margin-right: -40px;
+  }
 }
 
 
 /* ------- NAV ------- */
 
-#about {
+#about, #home, #colophon {
   top: 20px;
-  right: 20px;
   position: absolute;
-  font-family: 'FuturaBT-Bold', sans-serif;
+  font-family: 'FuturaBT-Book', sans-serif;
+  letter-spacing: .05em;
+  font-size: 13px;
+}
+
+#about {
+  right: 20px;
 }
 
 #colophon {
-  top: 20px;
   left: 20px;
-  position: absolute;
-  font-family: 'FuturaBT-Bold', sans-serif;
 }
+
+/*
+#next .keyboard {
+  font-size: 14px;
+  font-family: 'FuturaBT-Book', sans-serif;;
+  font-size: 13px;
+  color: #ccc;
+  letter-spacing: .05em;
+  right: 50%;
+  margin-left: -74px;
+  visibility:hidden;
+}
+
+#next:hover .keyboard {
+  visibility:visible;
+}
+*/
+
 
 p {
   line-height: 140%;
@@ -167,6 +207,7 @@ a {
 a:hover, a.current {
   color: black;
 }
+
 
 
 /*
