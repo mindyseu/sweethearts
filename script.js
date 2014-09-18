@@ -211,39 +211,13 @@ timeline.touchmove = function (event) {
     nextPage = event.target.getAttribute('href');
    };
 };      
-document.onmouseout = function (event) {
+document.touchend = function (event) {
     if (!scrubbing) return;
     if (nextPage) window.location = nextPage;
     scrubbing = false;
     nextPage = null;
 };
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
