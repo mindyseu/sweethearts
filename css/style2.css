@@ -66,9 +66,12 @@ strong {
 }
 
 #next,
-#previous,
+#previous
+{
+  bottom: 31px;
+}
 #timeline {
-  bottom: 25px;
+  bottom: 21px;
 }
 
 #next {
@@ -76,6 +79,7 @@ strong {
   margin-bottom: -6px;
   left: 50%;
   margin-left: -155px;
+  height: 10px;
 }
 
 #previous {
@@ -83,11 +87,15 @@ strong {
   margin-bottom: -6px;
   right: 50%;
   margin-right: -155px;
+  height: 10px;
 }
 
 @media (min-width: 930px) {
   #next,
-  #previous,
+  #previous{
+    top: 23px;
+  }
+
   #timeline {
     top: 22px;
   }
@@ -178,10 +186,9 @@ strong {
   left: 20px;
 }
 
-
-#keyboard{
+#keyboard {
   font-size: 14px;
-  font-family: 'FuturaBT-Book', sans-serif;;
+  font-family: 'FuturaBT-Book', sans-serif;
   font-size: 13px;
   color: #ccc;
   letter-spacing: .05em;
@@ -190,10 +197,21 @@ strong {
   margin-top: 50px;
 }
 
-#arrows:hover #keyboard{
+#arrows {
+  height: 0px;
+}
+
+.no-touch #arrows:hover #keyboard{
   visibility:visible;
   z-index: -999;
 }
+
+/*
+.no-touch #timeline a #p94:active #p94popup {
+  visibility: visible;
+  z-index: -999;
+}
+*/
 
 p {
   line-height: 140%;
