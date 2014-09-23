@@ -37,13 +37,13 @@ strong {
 }
 
 #timeline {
-  height: 10px;
+  height: 16px;
 }
 
 #timeline a {
   border-left: 1px solid #ccc;
   position: absolute;
-  height: 10px;
+  height: 16px;
   padding-left: 1px;
 }
 
@@ -56,7 +56,7 @@ strong {
   border-left: 1px solid #000;
   position: absolute;
   height: 30px;
-  margin-top:-10px;
+  margin-top:-7px;
 }
 
 #timeline,
@@ -68,15 +68,14 @@ strong {
 #next,
 #previous
 {
-  bottom: 31px;
+  bottom: 27px;
 }
 #timeline {
-  bottom: 21px;
+  bottom: 20px;
 }
 
 #next {
   position: absolute;
-  margin-bottom: -6px;
   left: 50%;
   margin-left: -155px;
   height: 10px;
@@ -84,7 +83,6 @@ strong {
 
 #previous {
   position: absolute;
-  margin-bottom: -6px;
   right: 50%;
   margin-right: -155px;
   height: 10px;
@@ -97,7 +95,7 @@ strong {
   }
 
   #timeline {
-    top: 22px;
+    top: 19px;
   }
   #next {
     margin-top: -5px;
